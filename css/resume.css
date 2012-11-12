@@ -1,0 +1,13 @@
+.cv_section {
+  border-style:solid;
+  border-top:thick double #ff0000;
+}
+
+.cv_entry .cv_location {
+  font-style: italic;
+  
+}
+
+.cv_entry p.abstract {
+  font-style: italic;
+}

@@ -2,12 +2,12 @@
 layout: resume
 title: Resume
 keywords: DSP, Researcher, PhD, Engineer
-style: css/resume.css
+style: resume.css
 ---
 <div id="resume">
 <h1> Lionel Koenig - Audio Technology Researcher/Engineer </h1>
 
-<p><a href="cv_Koenig_Lionel.pdf">download as pdf</a></p>
+<p><a href="cv_Lionel_Koenig.pdf"><img src="/images/pdficon_small.png" alt="pdf">download as pdf</img></a></p>
 
 <div class="cv_section">
 <h2>Experiences</h2>
@@ -161,6 +161,61 @@ style: css/resume.css
     on these plugins for Accenture Prague from Toulouse during six months.</p>
   </div>
 </div>
+<div class="cv_section">
+  <h2>Educations</h2>
+  <div class="cv_entry">
+    <div class="cv_position">PhD in Signal Processing</div>
+    <div class="cv_location">University of Toulouse - France</div>
+    <div class="cv_period">January 2011</div>
+    <h4>Packet loss concealment on voice over IP</h4>
+    <p class="abstract">
+      Packet loss due to misrouted
+    or delayed packets in voice over IP leads to huge voice quality
+    degradation. Packet loss concealment algorithms try to enhance the
+    perceptive quality of the speech. The huge variety of vocoders leads
+    us to propose a generic framework working directly on the speech
+    signal available after decoding. The proposed system relies on one
+    single "hidden Markov model" to model time evolution of acoustic
+    features. An original indicator of continuous voicing is added to
+    conventional parameters (Linear Predictive Cepstral Coefficients) in
+    order to handle voiced/unvoiced sound. Finding the best path with
+    missing observations leads to one major contribution: a modified
+    version of the Viterbi algorithm tailored for estimating missing
+    observations. All contributions are assessed using both perceptual
+    criteria and objective metrics.
+    </p>
+  </div>
+  
+  <div class="cv_entry">
+    <div class="cv_position">Master Thesis in Signal, Audio and Images Processing</div>
+    <div class="cv_location">Institut National Polytechnique - Toulouse - France</div>
+    <div class="cv_period">June 2007</div>
+    <h4>Ultrasonic Imaging Using Time Domain Topological Energy</h4>
+    <p class="abstract">
+      The Time Domain
+      Topological Energy has been defined as a promising technique for
+      nondestructive testing of complex materials. It uses mathematical
+      tools derived from shape optimisation and the refocusing properties
+      of time reversal allowing an efficient solution of the inverse
+      problem of acoustical imaging. This method has been successfully
+      adapted to the imaging of low impedance media, with properties near
+      those of biological tissues and has proved to be reliable on real
+      breast imaging. The main drawback of the method remains its time
+      consumption. Yet, its efficiency and reliability open important
+      perspectives in acoustical imaging.
+    </p>
+  </div>
+  <div class="cv_entry">
+    <div class="cv_position">Engineer degree (Master Thesis) in Electronics and Signal Processing</div>
+    <div class="cv_location">ENSEEIHT - Toulouse National Institute of Technology - France</div>
+    <div class="cv_period">June 2007</div>
+  </div>
+  <div class="cv_entry">
+    <div class="cv_position">Baccalaur&eacute;at S (&#x27;A&#x27; Level in Mathematics, Physics, and Chemistry)</div>
+    <div class="cv_location">Lyc&eacute;e Jean-Moulin - Forbach - France</div>
+    <div class="cv_period">June 2002</div>
+  </div>
+</div>
 </div>
 
 <!-- <div class="cv_entry">
@@ -172,52 +227,6 @@ style: css/resume.css
 
 
 <!-- 
-\section{Educations}
-
-\cventry{January 2011}{PhD}{University of Toulouse}{Toulouse}{Packet
-  loss concealment on voice over IP}{\textit{Doctor in Signal Image,
-    Audio Processing and Optimisation}\\ Packet loss due to misrouted
-  or delayed packets in voice over IP leads to huge voice quality
-  degradation. Packet loss concealment algorithms try to enhance the
-  perceptive quality of the speech. The huge variety of vocoders leads
-  us to propose a generic framework working directly on the speech
-  signal available after decoding. The proposed system relies on one
-  single "hidden Markov model" to model time evolution of acoustic
-  features. An original indicator of continuous voicing is added to
-  conventional parameters (Linear Predictive Cepstral Coefficients) in
-  order to handle voiced/unvoiced sound. Finding the best path with
-  missing observations leads to one major contribution: a modified
-  version of the Viterbi algorithm tailored for estimating missing
-  observations. All contributions are assessed using both perceptual
-  criteria and objective metrics.}
-
-\cventry{June 2007}{Master Thesis in Signal, Audio and Images
-  Processing}{Institut National Polytechnique}{Toulouse}{Ultrasonic
-  Imaging Using Time Domain Topological Energy}{ The Time Domain
-  Topological Energy has been defined as a promising technique for
-  nondestructive testing of complex materials. It uses mathematical
-  tools derived from shape optimisation and the refocusing properties
-  of time reversal allowing an efficient solution of the inverse
-  problem of acoustical imaging. This method has been successfully
-  adapted to the imaging of low impedance media, with properties near
-  those of biological tissues and has proved to be reliable on real
-  breast imaging. The main drawback of the method remains its time
-  consumption. Yet, its efficiency and reliability open important
-  perspectives in acoustical imaging.
-}
-
-\cventry{June 2007}{Engineer degree (Master Thesis) in electronics and
-  signal processing}{ENSEEIHT - Toulouse National Institute of
-  Technology}{Toulouse}{\textit{Engineer}}{}
-
-\cventry{June 2002}{Baccalauréat S ('A' Level in Mathematics, Physics,
-  and Chemistry)}{Lycée Jean-Moulin}{Forbach}{}{}
-
-%% \section{Master thesis}
-%% \cvline{title}{\emph{Title}}
-%% \cvline{supervisors}{Supervisors}
-%% \cvline{description}{\small Short thesis abstract}
-
 \section{Skills}
 \cvline{Embedded system}{Design, prototyping and development of signal processing algorithms}
 \cvline{Simulation Validation}{Matlab/Simulink, Python/Numpy/Scipy}
@@ -233,25 +242,4 @@ style: css/resume.css
 
 \section{Extra Activities}
 \cvline{Music}{Musician playing the trombone. Active member of Ensemble Instrumental de l'Ariège, a concert band.}
-
-%% \section{Extra 1}
-%% \cvlistitem{Item 1}
-%% \cvlistitem{Item 2}
-%% \cvlistitem[+]{Item 3}            % optional other symbol
-
-%% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
-%% \section{Extra 2}
-%% \cvlistdoubleitem{Item 1}{Item 4}
-%% \cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
-%% \cvlistdoubleitem{Item 3}{}
-
-% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
-%% \nocite{*}
-\nocite{KoenigPhd, Lachambre2011, Koenig2011, Koenig2009,
-  Koenig2009a, Koenig2009b, LeCoz2010}
-\renewcommand\refname{Selected Publications}
-\bibliographystyle{plain}
-{\small\bibliography{publications}}
-\end{document}
  -->

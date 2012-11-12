@@ -1,0 +1,22 @@
+
+/* Top Menu */
+.top_menu {
+  font-size: 1.1em;
+  font-variant: small-caps;  
+  float: right;
+  margin-top: 8px;
+}
+
+.top_menu a {
+  color: gray;
+  text-decoration: none;
+}
+.top_menu ul {
+  list-style-type: none;
+}
+
+.top_menu ul li {
+  float: left;
+  border-right: 1px dotted #DDD;
+  padding: 0.35em 0.75em;
+}

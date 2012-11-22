@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Publications
+style: publication.css
 ---
 {% for post in site.posts %}
   <div class="pub_entry">
-    <h1><a href="{{ post.url }}">{{ post.title }}</h1></a>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p><emph>{{ post.authors | escape }}<emph></p>
     <p>{{post.content | markdownify}}</p>
     <p>

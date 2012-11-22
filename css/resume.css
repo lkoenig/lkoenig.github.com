@@ -1,13 +1,41 @@
 .cv_section {
   border-style:solid;
-  border-top:thick double #ff0000;
+  border-top:thick double #eeeeee;
+}
+.cv_section
+h2 {
+  text-transform: uppercase;
 }
 
-.cv_entry .cv_location {
+.cv_entry
+.cv_position {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.cv_entry
+.cv_location {
   font-style: italic;
-  
+  font-size: 1.1em;
+  float: right;
 }
 
-.cv_entry p.abstract {
+.cv_entry
+.cv_period {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.cv_entry
+h4 {
+  text-transform: capitalize;
+}
+.cv_entry
+p {
+}
+
+.cv_entry 
+p.abstract {
   font-style: italic;
 }

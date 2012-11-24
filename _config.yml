@@ -25,6 +25,23 @@ maruku:
 rdiscount:
   extensions: []
 
+scholar:
+  style: _bibliography/lkoenig.csl
+  # style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: ./_bibliography
+  bibliography: references.bib
+
+  details_dir:    publications
+  details_layout: publication_entry.html
+  details_link:   Details
+
+  query: "@*"
+
 kramdown:
   auto_ids: true,
   footnote_nr: 1
@@ -32,10 +49,11 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
   
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+coderay:
+  coderay_wrap: div
+  coderay_line_numbers: inline
+  coderay_line_numbers_start: 1
+  coderay_tab_width: 4
+  coderay_bold_every: 10
+  coderay_css: style
+  

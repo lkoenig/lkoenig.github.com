@@ -1,9 +1,30 @@
 ---
 layout: default
 style: publication.css
----
+title: Publications
+--- 
 <div class="pub_entry">
-<h2>{{page.title}}</h2>
-<p>{{ page.authors }}</p>
-<p>{{content}}</p>
-<div>
+  <h2>{{ page.entry.title}} </h2>
+  <i> {{ page.entry.author}}</i> 
+<h3>Abstract:</h3>
+<p>
+{{ page.entry.abstract }}
+</p>
+
+
+<b>Downloads:</b>
+{% if page.entry.pdflink1 == empty or page.entry.pdflink1 == nil %}
+{% else %}
+<a href="{{page.entry.pdflink1}}">PDF</a>
+{% endif %}
+{% if page.entry.pptlink1 == empty  or page.entry.pptlink1 == nil %}
+{% else %}
+, <a href="{{page.entry.pptlink1}}">PPT</a> 
+{% endif %}
+
+<br />
+<h3>BibTeX:</h3>
+{% highlight bibtex tabsize=2 %}
+ {{ page.entry.bibtex }} 
+{% endhighlight %}
+</div>

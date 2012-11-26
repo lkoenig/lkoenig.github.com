@@ -35,6 +35,11 @@ h4 {
 p {
 }
 
+.cv_entry
+.cv_detail {
+  display: none;
+}
+
 .cv_entry 
 p.abstract {
   font-style: italic;
